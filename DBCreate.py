@@ -1,7 +1,6 @@
 import sqlite3
-from datetime import datetime
 
-# Подключение к базе данных (или создание новой базы данных)
+
 conn = sqlite3.connect('NoteDB.db')
 cursor = conn.cursor()
 
@@ -16,6 +15,7 @@ CREATE TABLE IF NOT EXISTS Notes (
 '''
 cursor.execute(create_table_query)
 
+# Создание таблицы Tags
 create_table_query = '''
 CREATE TABLE IF NOT EXISTS Tags (
     Name TEXT PRIMARY KEY
@@ -23,6 +23,7 @@ CREATE TABLE IF NOT EXISTS Tags (
 '''
 cursor.execute(create_table_query)
 
+# Создание таблицы Tag_note
 create_table_query = '''
 CREATE TABLE IF NOT EXISTS Tag_note (
     Note TEXT,
@@ -33,18 +34,6 @@ CREATE TABLE IF NOT EXISTS Tag_note (
 '''
 cursor.execute(create_table_query)
 
-# Получение текущей даты
-# current_date = datetime.now().strftime('%Y-%m-%d')
-
-# Добавление записи
-# insert_data_query = """
-# INSERT INTO Notes (Name, Content, Creation_date, Edit_date)
-# VALUES ('Первая заметка', 'содержание', ?, ?);
-# """
-# cursor.execute(insert_data_query, (current_date, current_date))
-
-# Сохраняем изменения
 conn.commit()
 
-# Закрываем соединение
 conn.close()

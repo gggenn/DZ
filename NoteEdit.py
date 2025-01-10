@@ -16,6 +16,9 @@ class Ui_Dialog(object):
         Dialog.setObjectName("Dialog")
         Dialog.resize(800, 600)
         Dialog.setMinimumSize(QtCore.QSize(800, 600))
+        Dialog.setStyleSheet("\n"
+"    background-color: #EAEDFE;\n"
+"")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(Dialog)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.widget = QtWidgets.QWidget(Dialog)
@@ -25,27 +28,105 @@ class Ui_Dialog(object):
         sizePolicy.setHeightForWidth(self.widget.sizePolicy().hasHeightForWidth())
         self.widget.setSizePolicy(sizePolicy)
         self.widget.setMinimumSize(QtCore.QSize(0, 0))
+        self.widget.setStyleSheet("")
         self.widget.setObjectName("widget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.widget)
         self.verticalLayout.setObjectName("verticalLayout")
         self.horizontalLayout = QtWidgets.QHBoxLayout()
-        self.horizontalLayout.setSpacing(5)
+        self.horizontalLayout.setSpacing(8)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.boldButton = QtWidgets.QPushButton(self.widget)
+        self.boldButton.setStyleSheet("QPushButton {\n"
+"    background-color: #eebbc3;\n"
+"    border-radius: 4px;\n"
+"    width: 40px;\n"
+"    height: 28px;\n"
+"    color: #232946;\n"
+"    font-size: 14px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #E6B4BC; \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFC9D2;\n"
+"}")
         self.boldButton.setObjectName("boldButton")
         self.horizontalLayout.addWidget(self.boldButton)
         self.italicButton = QtWidgets.QPushButton(self.widget)
+        self.italicButton.setStyleSheet("QPushButton {\n"
+"    background-color: #eebbc3;\n"
+"    border-radius: 4px;\n"
+"    width: 40px;\n"
+"    height: 28px;\n"
+"    color: #232946;\n"
+"    font-size: 14px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #E6B4BC; \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFC9D2;\n"
+"}")
         self.italicButton.setObjectName("italicButton")
         self.horizontalLayout.addWidget(self.italicButton)
+        self.colorButton = QtWidgets.QPushButton(self.widget)
+        self.colorButton.setStyleSheet("QPushButton {\n"
+"    background-color: #eebbc3;\n"
+"    border-radius: 4px;\n"
+"    padding-top: 6px;\n"
+"    padding-right: 10px;\n"
+"    padding-bottom: 6px;\n"
+"    padding-left: 10px;\n"
+"    color: #232946;\n"
+"    font-size: 14px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #E6B4BC; \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFC9D2;\n"
+"}")
+        self.colorButton.setObjectName("colorButton")
+        self.horizontalLayout.addWidget(self.colorButton)
         spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout.addItem(spacerItem)
         self.verticalLayout.addLayout(self.horizontalLayout)
         self.nameField = QtWidgets.QLineEdit(self.widget)
+        self.nameField.setStyleSheet("background-color: white;\n"
+"border-radius: 4px;\n"
+"color: #232946;\n"
+"font-size: 14px;\n"
+"border: 1px solid #ccc;\n"
+"")
         self.nameField.setObjectName("nameField")
         self.verticalLayout.addWidget(self.nameField)
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
         self.addTagButton = QtWidgets.QPushButton(self.widget)
+        self.addTagButton.setStyleSheet("QPushButton {\n"
+"    background-color: #eebbc3;\n"
+"    border-radius: 4px;\n"
+"    padding-top: 6px;\n"
+"    padding-right: 10px;\n"
+"    padding-bottom: 6px;\n"
+"    padding-left: 10px;\n"
+"    color: #232946;\n"
+"    font-size: 14px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #E6B4BC; \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFC9D2;\n"
+"}")
         self.addTagButton.setObjectName("addTagButton")
         self.horizontalLayout_3.addWidget(self.addTagButton)
         self.tagLabel = QtWidgets.QLabel(self.widget)
@@ -56,17 +137,59 @@ class Ui_Dialog(object):
         self.horizontalLayout_3.setStretch(1, 80)
         self.verticalLayout.addLayout(self.horizontalLayout_3)
         self.contentField = QtWidgets.QTextEdit(self.widget)
+        self.contentField.setStyleSheet("background-color: white;\n"
+"border-radius: 4px;\n"
+"color: #232946;\n"
+"font-size: 14px;\n"
+"border: 1px solid #ccc;\n"
+"")
         self.contentField.setObjectName("contentField")
         self.verticalLayout.addWidget(self.contentField)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_2.setSpacing(5)
+        self.horizontalLayout_2.setSpacing(8)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem1)
         self.canelButton = QtWidgets.QPushButton(self.widget)
+        self.canelButton.setStyleSheet("QPushButton {\n"
+"    background-color: #eebbc3;\n"
+"    border-radius: 4px;\n"
+"    padding-top: 6px;\n"
+"    padding-right: 10px;\n"
+"    padding-bottom: 6px;\n"
+"    padding-left: 10px;\n"
+"    color: #232946;\n"
+"    font-size: 14px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #E6B4BC; \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFC9D2;\n"
+"}")
         self.canelButton.setObjectName("canelButton")
         self.horizontalLayout_2.addWidget(self.canelButton)
         self.saveButton = QtWidgets.QPushButton(self.widget)
+        self.saveButton.setStyleSheet("QPushButton {\n"
+"    background-color: #eebbc3;\n"
+"    border-radius: 4px;\n"
+"    padding-top: 6px;\n"
+"    padding-right: 10px;\n"
+"    padding-bottom: 6px;\n"
+"    padding-left: 10px;\n"
+"    color: #232946;\n"
+"    font-size: 14px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #E6B4BC; \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFC9D2;\n"
+"}")
         self.saveButton.setObjectName("saveButton")
         self.horizontalLayout_2.addWidget(self.saveButton)
         self.verticalLayout.addLayout(self.horizontalLayout_2)
@@ -80,6 +203,7 @@ class Ui_Dialog(object):
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.boldButton.setText(_translate("Dialog", "B"))
         self.italicButton.setText(_translate("Dialog", "I"))
+        self.colorButton.setText(_translate("Dialog", "Цвет"))
         self.addTagButton.setText(_translate("Dialog", "Добавить тег"))
         self.canelButton.setText(_translate("Dialog", "Отменить"))
         self.saveButton.setText(_translate("Dialog", "Сохранить"))

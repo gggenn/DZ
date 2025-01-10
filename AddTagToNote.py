@@ -14,7 +14,10 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(300, 150)
+        Dialog.resize(300, 148)
+        Dialog.setStyleSheet("\n"
+"    background-color: #EAEDFE;\n"
+"")
         self.widget = QtWidgets.QWidget(Dialog)
         self.widget.setGeometry(QtCore.QRect(0, 0, 300, 150))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Preferred)
@@ -24,11 +27,22 @@ class Ui_Dialog(object):
         self.widget.setSizePolicy(sizePolicy)
         self.widget.setObjectName("widget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.widget)
-        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout.setContentsMargins(14, 14, 14, 14)
         self.verticalLayout.setObjectName("verticalLayout")
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.tagComboBox = QtWidgets.QComboBox(self.widget)
+        self.tagComboBox.setStyleSheet("QComboBox {\n"
+"    background-color: #eebbc3;\n"
+"    border-radius: 4px;\n"
+"    padding-top: 6px;\n"
+"    padding-right: 10px;\n"
+"    padding-bottom: 6px;\n"
+"    padding-left: 10px;\n"
+"    color: #232946;\n"
+"    font-size: 14px;\n"
+"}\n"
+"")
         self.tagComboBox.setObjectName("tagComboBox")
         self.horizontalLayout_2.addWidget(self.tagComboBox)
         spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
@@ -37,13 +51,50 @@ class Ui_Dialog(object):
         spacerItem1 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.verticalLayout.addItem(spacerItem1)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setSpacing(8)
         self.horizontalLayout.setObjectName("horizontalLayout")
         spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout.addItem(spacerItem2)
         self.canelButton = QtWidgets.QPushButton(self.widget)
+        self.canelButton.setStyleSheet("QPushButton {\n"
+"    background-color: #eebbc3;\n"
+"    border-radius: 4px;\n"
+"    padding-top: 6px;\n"
+"    padding-right: 10px;\n"
+"    padding-bottom: 6px;\n"
+"    padding-left: 10px;\n"
+"    color: #232946;\n"
+"    font-size: 14px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #E6B4BC; \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFC9D2;\n"
+"}")
         self.canelButton.setObjectName("canelButton")
         self.horizontalLayout.addWidget(self.canelButton)
         self.addButton = QtWidgets.QPushButton(self.widget)
+        self.addButton.setStyleSheet("QPushButton {\n"
+"    background-color: #eebbc3;\n"
+"    border-radius: 4px;\n"
+"    padding-top: 6px;\n"
+"    padding-right: 10px;\n"
+"    padding-bottom: 6px;\n"
+"    padding-left: 10px;\n"
+"    color: #232946;\n"
+"    font-size: 14px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #E6B4BC; \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFC9D2;\n"
+"}")
         self.addButton.setObjectName("addButton")
         self.horizontalLayout.addWidget(self.addButton)
         self.verticalLayout.addLayout(self.horizontalLayout)

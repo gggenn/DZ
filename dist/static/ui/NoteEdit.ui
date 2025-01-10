@@ -19,6 +19,11 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">
+    background-color: #EAEDFE;
+</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
     <widget class="QWidget" name="widget" native="true">
@@ -34,14 +39,35 @@
        <height>0</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <property name="spacing">
-         <number>5</number>
+         <number>8</number>
         </property>
         <item>
          <widget class="QPushButton" name="boldButton">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #eebbc3;
+    border-radius: 4px;
+    width: 40px;
+    height: 28px;
+    color: #232946;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #E6B4BC; 
+}
+
+QPushButton:pressed {
+    background-color: #FFC9D2;
+}</string>
+          </property>
           <property name="text">
            <string>B</string>
           </property>
@@ -49,8 +75,53 @@
         </item>
         <item>
          <widget class="QPushButton" name="italicButton">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #eebbc3;
+    border-radius: 4px;
+    width: 40px;
+    height: 28px;
+    color: #232946;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #E6B4BC; 
+}
+
+QPushButton:pressed {
+    background-color: #FFC9D2;
+}</string>
+          </property>
           <property name="text">
            <string>I</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="colorButton">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #eebbc3;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    color: #232946;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #E6B4BC; 
+}
+
+QPushButton:pressed {
+    background-color: #FFC9D2;
+}</string>
+          </property>
+          <property name="text">
+           <string>Цвет</string>
           </property>
          </widget>
         </item>
@@ -70,12 +141,41 @@
        </layout>
       </item>
       <item>
-       <widget class="QLineEdit" name="nameField"/>
+       <widget class="QLineEdit" name="nameField">
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+border-radius: 4px;
+color: #232946;
+font-size: 14px;
+border: 1px solid #ccc;
+</string>
+        </property>
+       </widget>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="20,80">
         <item>
          <widget class="QPushButton" name="addTagButton">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #eebbc3;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    color: #232946;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #E6B4BC; 
+}
+
+QPushButton:pressed {
+    background-color: #FFC9D2;
+}</string>
+          </property>
           <property name="text">
            <string>Добавить тег</string>
           </property>
@@ -91,12 +191,21 @@
        </layout>
       </item>
       <item>
-       <widget class="QTextEdit" name="contentField"/>
+       <widget class="QTextEdit" name="contentField">
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+border-radius: 4px;
+color: #232946;
+font-size: 14px;
+border: 1px solid #ccc;
+</string>
+        </property>
+       </widget>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <property name="spacing">
-         <number>5</number>
+         <number>8</number>
         </property>
         <item>
          <spacer name="horizontalSpacer_2">
@@ -113,6 +222,26 @@
         </item>
         <item>
          <widget class="QPushButton" name="canelButton">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #eebbc3;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    color: #232946;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #E6B4BC; 
+}
+
+QPushButton:pressed {
+    background-color: #FFC9D2;
+}</string>
+          </property>
           <property name="text">
            <string>Отменить</string>
           </property>
@@ -120,6 +249,26 @@
         </item>
         <item>
          <widget class="QPushButton" name="saveButton">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #eebbc3;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    color: #232946;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #E6B4BC; 
+}
+
+QPushButton:pressed {
+    background-color: #FFC9D2;
+}</string>
+          </property>
           <property name="text">
            <string>Сохранить</string>
           </property>

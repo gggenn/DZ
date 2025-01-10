@@ -1,0 +1,10 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'MS Shell Dlg 2'; font-size:14px; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:7.8pt;">Сдесь содержиться текст заметки.</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:7.8pt;">Можно использовать </span><span style=" font-size:7.8pt; font-weight:600;">жирный шрифт</span><span style=" font-size:7.8pt;"> (кнопка &quot;B&quot;) и </span><span style=" font-size:7.8pt; font-style:italic;">курсив</span><span style=" font-size:7.8pt;"> (кнопка &quot;I&quot;). Для этого выделите текст и нажмите соответствующую кнопку.</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:7.8pt;">Можно поменять </span><span style=" font-size:7.8pt; color:#aa00ff;">цвет текста</span><span style=" font-size:7.8pt;">. Для этого  выделите текст, нажмите кнопку &quot;Цвет&quot; и выберите подходящий цвет.</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:7.8pt;">По кнопке &quot;Добавить тег&quot; можно выбрать тег для заметки.</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:7.8pt;">Поле для ввода выше содержит название заметки.</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:7.8pt;"><br /></p></body></html>

@@ -14,30 +14,78 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_addTage(object):
     def setupUi(self, addTage):
         addTage.setObjectName("addTage")
-        addTage.resize(300, 120)
-        self.widget = QtWidgets.QWidget(addTage)
-        self.widget.setGeometry(QtCore.QRect(90, 70, 195, 30))
-        self.widget.setObjectName("widget")
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.widget)
+        addTage.resize(280, 120)
+        addTage.setStyleSheet("\n"
+"    background-color: #EAEDFE;\n"
+"")
+        self.layoutWidget = QtWidgets.QWidget(addTage)
+        self.layoutWidget.setGeometry(QtCore.QRect(40, 70, 227, 41))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.layoutWidget)
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_2.setSpacing(8)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.canelButton = QtWidgets.QPushButton(self.widget)
+        self.canelButton = QtWidgets.QPushButton(self.layoutWidget)
+        self.canelButton.setStyleSheet("QPushButton {\n"
+"    background-color: #eebbc3;\n"
+"    border-radius: 4px;\n"
+"    padding-top: 6px;\n"
+"    padding-right: 10px;\n"
+"    padding-bottom: 6px;\n"
+"    padding-left: 10px;\n"
+"    color: #232946;\n"
+"    font-size: 14px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #E6B4BC; \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFC9D2;\n"
+"}")
         self.canelButton.setObjectName("canelButton")
         self.horizontalLayout_2.addWidget(self.canelButton)
-        self.addButton = QtWidgets.QPushButton(self.widget)
+        self.addButton = QtWidgets.QPushButton(self.layoutWidget)
+        self.addButton.setStyleSheet("QPushButton {\n"
+"    background-color: #eebbc3;\n"
+"    border-radius: 4px;\n"
+"    padding-top: 6px;\n"
+"    padding-right: 10px;\n"
+"    padding-bottom: 6px;\n"
+"    padding-left: 10px;\n"
+"    color: #232946;\n"
+"    font-size: 14px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #E6B4BC; \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFC9D2;\n"
+"}")
         self.addButton.setObjectName("addButton")
         self.horizontalLayout_2.addWidget(self.addButton)
-        self.widget1 = QtWidgets.QWidget(addTage)
-        self.widget1.setGeometry(QtCore.QRect(10, 20, 166, 24))
-        self.widget1.setObjectName("widget1")
-        self.horizontalLayout = QtWidgets.QHBoxLayout(self.widget1)
+        self.layoutWidget1 = QtWidgets.QWidget(addTage)
+        self.layoutWidget1.setGeometry(QtCore.QRect(10, 20, 166, 24))
+        self.layoutWidget1.setObjectName("layoutWidget1")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.layoutWidget1)
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout.setObjectName("horizontalLayout")
-        self.tagLabel = QtWidgets.QLabel(self.widget1)
+        self.tagLabel = QtWidgets.QLabel(self.layoutWidget1)
+        self.tagLabel.setStyleSheet("color: #232946;\n"
+"font-size: 14px;")
         self.tagLabel.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.tagLabel.setObjectName("tagLabel")
         self.horizontalLayout.addWidget(self.tagLabel)
-        self.tagField = QtWidgets.QLineEdit(self.widget1)
+        self.tagField = QtWidgets.QLineEdit(self.layoutWidget1)
+        self.tagField.setStyleSheet("background-color: white;\n"
+"border-radius: 4px;\n"
+"color: #232946;\n"
+"font-size: 14px;\n"
+"border: 1px solid #ccc;\n"
+"")
         self.tagField.setObjectName("tagField")
         self.horizontalLayout.addWidget(self.tagField)
 

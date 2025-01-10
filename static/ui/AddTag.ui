@@ -6,25 +6,53 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>300</width>
+    <width>280</width>
     <height>120</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QWidget" name="">
+  <property name="styleSheet">
+   <string notr="true">
+    background-color: #EAEDFE;
+</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>40</x>
      <y>70</y>
-     <width>195</width>
-     <height>30</height>
+     <width>227</width>
+     <height>41</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>8</number>
+    </property>
     <item>
      <widget class="QPushButton" name="canelButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #eebbc3;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    color: #232946;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #E6B4BC; 
+}
+
+QPushButton:pressed {
+    background-color: #FFC9D2;
+}</string>
+      </property>
       <property name="text">
        <string>Отменить</string>
       </property>
@@ -32,6 +60,26 @@
     </item>
     <item>
      <widget class="QPushButton" name="addButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #eebbc3;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    color: #232946;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #E6B4BC; 
+}
+
+QPushButton:pressed {
+    background-color: #FFC9D2;
+}</string>
+      </property>
       <property name="text">
        <string>Сохранить</string>
       </property>
@@ -39,7 +87,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -51,6 +99,10 @@
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <widget class="QLabel" name="tagLabel">
+      <property name="styleSheet">
+       <string notr="true">color: #232946;
+font-size: 14px;</string>
+      </property>
       <property name="text">
        <string>Тег</string>
       </property>
@@ -60,7 +112,16 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="tagField"/>
+     <widget class="QLineEdit" name="tagField">
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+border-radius: 4px;
+color: #232946;
+font-size: 14px;
+border: 1px solid #ccc;
+</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
